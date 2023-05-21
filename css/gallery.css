@@ -1,0 +1,79 @@
+.gallery-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery-image {
+    background-size: cover;
+    background-position: center;
+    width: 300px; /* Prispôsobte šírku podľa svojich potrieb */
+    height: 200px; /* Prispôsobte výšku podľa svojich potrieb */
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.1); /* Zväčšenie pri hoveri, prispôsobte podľa svojich potrieb */
+}
+
+.gallery-title {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.gallery-description {
+    font-size: 14px;
+    color: #888;
+}
+
+.gallery-upload {
+    margin-top: 20px;
+}
+
+.gallery-upload input,
+.gallery-upload button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gallery-upload input[type="text"],
+.gallery-upload input[type="file"] {
+    width: 100%;
+    padding: 10px;
+}
+
+.gallery-upload button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.gallery-upload button[type="submit"]:hover {
+    background-color: #45a049;
+}
